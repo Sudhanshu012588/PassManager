@@ -17,10 +17,10 @@ function Manager() {
 
   const showPassword = () => {
     if (ref.current.src.includes('visible.png')) {
-      ref.current.src = `./eye.png`;
+      ref.current.src = `/eye.png`;
       passwordRef.current.type = 'text';
     } else {
-      ref.current.src = `./visible.png`;
+      ref.current.src = `/visible.png`;
       passwordRef.current.type = 'password';
     }
   };
@@ -95,7 +95,7 @@ function Manager() {
                   <img
                     ref={ref}
                     className="w-6"
-                    src='./public/visible.png'
+                    src='/visible.png'
                     alt="show"
                   />
                 </span>
@@ -106,7 +106,7 @@ function Manager() {
               onClick={savePassword}
             >
               <img
-                src="./add.png"
+                src="/add.png"
                 alt="Add"
                 className="w-6 h-6 mr-2"
               />
@@ -142,13 +142,13 @@ function Manager() {
                       <div className="flex justify-center mt-2 space-x-4">
                         <img
                           className="w-5 h-5 cursor-pointer hover:scale-110 transition"
-                          src={`./public/copy.png`}
+                          src='/copy.png'
                           alt="copy"
                           onClick={() => copy(item.password)}
                         />
                         <img
                           className="w-5 h-5 cursor-pointer hover:scale-110 transition"
-                          src={`./public/trash.png`}
+                          src='/trash.png'
                           alt="delete"
                           onClick={() => deletePassword(item.id)}
                         />
