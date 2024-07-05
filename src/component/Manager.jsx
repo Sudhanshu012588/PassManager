@@ -17,10 +17,10 @@ function Manager() {
 
   const showPassword = () => {
     if (ref.current.src.includes('visible.png')) {
-      ref.current.src = `./public/eye.png`;
+      ref.current.src = `./eye.png`;
       passwordRef.current.type = 'text';
     } else {
-      ref.current.src = `./public/visible.png`;
+      ref.current.src = `./visible.png`;
       passwordRef.current.type = 'password';
     }
   };
@@ -93,7 +93,7 @@ function Manager() {
                   <img
                     ref={ref}
                     className="w-6"
-                    src={`./public/visible.png`}
+                    src='./public/visible.png'
                     alt="show"
                   />
                 </span>
