@@ -139,10 +139,9 @@ function Manager() {
                   <td className="text-center py-2">
                     <span>**********</span>
                     <div className="flex justify-center mt-2 space-x-4">
-                      <img
+                      <div
                         className="w-5 h-5 cursor-pointer hover:scale-110 transition"
-                        src='../../public/copy.png'
-                        alt="copy"
+                      <i class="fa-regular fa-copy"></i>
                         onClick={() => copy(item.password)}
                       />
                       <img
