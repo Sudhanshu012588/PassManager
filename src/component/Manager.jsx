@@ -93,7 +93,7 @@ function Manager() {
                   <img
                     ref={ref}
                     className="w-6"
-                    src='./visible.png'
+                    src='public/visible.png'
                     alt="show"
                   />
                 </span>
@@ -146,7 +146,7 @@ function Manager() {
                         />
                         <img
                           className="w-5 h-5 cursor-pointer hover:scale-110 transition"
-                          src='./public/trash.png'
+                          src='public/trash.png'
                           alt="delete"
                           onClick={() => deletePassword(item.id)}
                         />
