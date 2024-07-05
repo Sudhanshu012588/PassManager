@@ -17,10 +17,10 @@ function Manager() {
 
   const showPassword = () => {
     if (ref.current.src.includes('visible.png')) {
-      ref.current.src = `./eye.png`;
+      ref.current.src = `./public/eye.png`;
       passwordRef.current.type = 'text';
     } else {
-      ref.current.src = `./visible.png`;
+      ref.current.src = `./public/visible.png`;
       passwordRef.current.type = 'password';
     }
   };
