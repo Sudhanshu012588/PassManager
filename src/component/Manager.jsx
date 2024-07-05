@@ -141,13 +141,13 @@ function Manager() {
                     <div className="flex justify-center mt-2 space-x-4">
                       <img
                         className="w-5 h-5 cursor-pointer hover:scale-110 transition"
-                        src='/copy.png'
+                        src='../public/copy.png'
                         alt="copy"
                         onClick={() => copy(item.password)}
                       />
                       <img
                         className="w-5 h-5 cursor-pointer hover:scale-110 transition"
-                        src='/trash.png'
+                        src='../public/trash.png'
                         alt="delete"
                         onClick={() => deletePassword(item.id)}
                       />
