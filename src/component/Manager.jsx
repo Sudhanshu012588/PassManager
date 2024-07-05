@@ -93,7 +93,7 @@ function Manager() {
                   <img
                     ref={ref}
                     className="w-6"
-                    src='./public/visible.png'
+                    src='./visible.png'
                     alt="show"
                   />
                 </span>
