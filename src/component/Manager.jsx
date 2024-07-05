@@ -30,6 +30,7 @@ function Manager() {
     const updatedPasswords = [...passwordArray, newEntry];
     setPasswordArray(updatedPasswords);
     localStorage.setItem('passwords', JSON.stringify(updatedPasswords));
+    alert('Password added successfully!');
     setForm({ site: '', username: '', password: '' });
   };
 
@@ -46,6 +47,7 @@ function Manager() {
     const updatedPasswords = passwordArray.filter((item) => item.id !== id);
     setPasswordArray(updatedPasswords);
     localStorage.setItem('passwords', JSON.stringify(updatedPasswords));
+    alert('Password deleted!');
   };
 
   return (
@@ -93,7 +95,7 @@ function Manager() {
                   <img
                     ref={ref}
                     className="w-6"
-                    src='public/visible.png'
+                    src='./public/visible.png'
                     alt="show"
                   />
                 </span>
@@ -140,13 +142,13 @@ function Manager() {
                       <div className="flex justify-center mt-2 space-x-4">
                         <img
                           className="w-5 h-5 cursor-pointer hover:scale-110 transition"
-                          src={`./copy.png`}
+                          src={`./public/copy.png`}
                           alt="copy"
                           onClick={() => copy(item.password)}
                         />
                         <img
                           className="w-5 h-5 cursor-pointer hover:scale-110 transition"
-                          src='public/trash.png'
+                          src={`./public/trash.png`}
                           alt="delete"
                           onClick={() => deletePassword(item.id)}
                         />
