@@ -57,29 +57,6 @@ function Manager() {
 
   return (
     <>
-      <nav className="bg-blue-800 p-4 text-white">
-        <div className="container mx-auto flex justify-between items-center">
-          <div className="text-xl font-bold">Password Manager</div>
-          <div className="hidden md:flex space-x-4">
-            <a href="#home" className="hover:underline">Home</a>
-            <a href="#features" className="hover:underline">Features</a>
-            <a href="#contact" className="hover:underline">Contact</a>
-          </div>
-          <div className="md:hidden">
-            <button onClick={toggleMenu}>
-              <img src="/menu.png" alt="Menu" className="w-6 h-6" />
-            </button>
-          </div>
-        </div>
-        {isMenuOpen && (
-          <div className="md:hidden bg-blue-800 text-white p-4">
-            <a href="#home" className="block py-2 hover:underline">Home</a>
-            <a href="#features" className="block py-2 hover:underline">Features</a>
-            <a href="#contact" className="block py-2 hover:underline">Contact</a>
-          </div>
-        )}
-      </nav>
-      
       <div className="bg-gradient-to-r from-blue-200 to-purple-200 min-h-screen py-8">
         <div className="container mx-auto max-w-4xl p-6 bg-white rounded-lg shadow-lg">
           <div className="text-center font-bold text-2xl text-blue-700 mb-6">
